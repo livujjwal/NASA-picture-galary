@@ -45,12 +45,7 @@ const dateArray =[];
     if(dateArray.length == 0){
         dateArray.push({ Date: date });
     }else{
-        dateArray.forEach(element => {
-            if (element.Date !== date) {
-                console.log(element.Date,date);
                 dateArray.push({ Date: date });
-            }
-        });
     }
   const dateString = JSON.stringify(dateArray);
   localStorage.setItem("search", dateString);
